@@ -30,7 +30,7 @@ class PostServiceTest {
     void create() {
         int before = postRepository.size();
         postService.create(1, "제목");
-        assertThat(postRepository.size()).isEqualTo(before+2);
+        assertThat(postRepository.size()).isEqualTo(before+1);
     }
     // 테스트 중
 
