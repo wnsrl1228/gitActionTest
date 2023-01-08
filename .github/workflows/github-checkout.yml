@@ -1,0 +1,15 @@
+name: github checkout
+
+on: [push]    # 이벤트 타입
+
+jobs:
+  build:
+    
+    runs-on: ubuntu-latest  # 실행할 컴퓨터 운영체제
+    
+    steps:  # 작업단위
+      - uses: actions/checkout@v3  # 다른 사람이 만든 actions로 나의 저장소를 작동으로 clone하고 checkout해줌
+      - name: Run pwd #작업 이름
+        run: pwd      # 실제 작업 명령어
+      - name: Run ls -al
+        run: ls -al
