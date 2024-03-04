@@ -32,6 +32,5 @@ class PostServiceTest {
         postService.create(1, "제목");
         assertThat(postRepository.size()).isEqualTo(before+1);
     }
-    // 테스트 중
-////
+
 }
